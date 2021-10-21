@@ -1,0 +1,76 @@
+@import "~bootstrap/scss/bootstrap";
+
+$color-red: #C12B39;
+$color-white :#FFFFFF;
+$color-black :#191919;
+$color-darker :#1A1919;
+$color-grey :#3D4043;
+
+p {
+  color: $color-white;
+}
+
+h1 {
+  color: $color-red;
+}
+
+h5 {
+  color: #FFFFFF;
+}
+
+body {
+  width: 100%;
+  background-color: $color-black;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2em;
+}
+
+img {
+  max-width: 20em;
+  height: auto;
+  max-height: 20em;
+}
+
+
+a, a:visited {
+	text-decoration: none;
+	position: relative;
+	color: $color-white;
+}
+
+
+//header
+header {
+  display: flex;
+  width: 100%;
+  margin: 50px auto;
+  .container-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    .search {
+      background-color: $color-darker;
+      input {
+        background-color: $color-darker;
+        border: 3px $color-white;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+
+
+//card
+.card {
+  border-radius: 0%;
+  border: 2px;
+  border-color: $color-grey;
+  background-color: $color-black;
+}
+
+.grille {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+}
